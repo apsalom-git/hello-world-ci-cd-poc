@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="d21ebedf-d401-42a2-affb-888f4447c196" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="hello-world-ci-cd-pocFlow" doc:id="d52ccf40-048b-4380-9f52-50b1e739756e" >
+		<http:listener doc:name="Listener" doc:id="f5e0de8b-388e-409d-afb5-5fa45fa91d37" config-ref="HTTP_Listener_config" path="/hello"/>
+		<set-payload value='#["Hello Aps"]' doc:name="Set Payload" doc:id="e726cacc-420e-43d6-a9b1-eda71a4c7eb4" />
+	</flow>
+</mule>
