@@ -5,7 +5,7 @@ on:
     
 jobs:
   build:
-    if: github.actor = 'apsalom-git'
+    if: github.actor == 'apsalom-git'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout this repo
