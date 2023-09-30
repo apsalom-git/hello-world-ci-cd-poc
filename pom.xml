@@ -94,7 +94,8 @@
 		</repository>
 		<repository>
     			<id>local-repository</id>
-    			<url>file://${basedir}/lib</url>
+			<name>Project Realated Repository</name>
+    			<url>file://${project.basedir}/lib</url>
   		</repository>
 	</repositories>
 
