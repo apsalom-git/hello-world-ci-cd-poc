@@ -32,8 +32,8 @@
 				<configuration>
 					<sharedLibraries>
 						<sharedLibrary>
-							<groupId>com.oracle</groupId>
-							<artifactId>ojdbc6-11.2.0.3</artifactId>
+							<groupId>oracle</groupId>
+							<artifactId>ojdbc6</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 					<cloudHubDeployment>
@@ -73,9 +73,10 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6-11.2.0.3</artifactId>
-			<version>0.1</version>
+    			<groupId>oracle</groupId>
+    			<artifactId>ojdbc6</artifactId>
+    			<version>11.2.0.3</version>
+    			<scope>system</scope>
 		</dependency>
 	</dependencies>
 
