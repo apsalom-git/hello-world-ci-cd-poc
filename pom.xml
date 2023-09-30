@@ -94,7 +94,7 @@
 		</repository>
 		<repository>
     			<id>local-repository</id>
-    			<url>${basedir}/lib</url>
+    			<url>file://${basedir}/lib</url>
   		</repository>
 	</repositories>
 
