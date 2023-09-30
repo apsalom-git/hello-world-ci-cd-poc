@@ -72,6 +72,11 @@
 			<version>1.2.2</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6-11.2.0.3</artifactId>
+			<version>0.1</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
